@@ -14,11 +14,8 @@
 //if the last digit is 0, remove it and return 
 
 function noBoringZeros(n) {
-    let arr = n.split('')
-    if arr[arr.length - 1] === 0 {
-        arr.pop()
-    } else{
-        arr.join('')
+    while(n % 10 === 0 && n != 0){
+        n / 10
     }
-    return arr
+    return n
 }
