@@ -5,3 +5,6 @@
 //   '10' => 16
 //   'FF' => 255
 
+function hexToDec(hexString){
+  return parseInt(hexString, 16);
+}
