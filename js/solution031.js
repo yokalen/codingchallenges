@@ -5,5 +5,5 @@
 //return a piece of the array with the number of elements equal to n
 
 function take(arr, n) {
-  // Your code here
+  return arr.slice(0, n);
 }
