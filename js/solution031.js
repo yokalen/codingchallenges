@@ -5,9 +5,9 @@
 //return a piece of the array with the number of elements equal to n
 
 //first solution
-function take(arr, n) {
-  return arr.slice(0, n);
-}
+// function take(arr, n) {
+//   return arr.slice(0, n);
+// }
 
 //refactored
 const take = (arr, n) => arr.slice(0, n);
