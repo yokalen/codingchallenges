@@ -7,7 +7,10 @@
 
 //take in a number, add five, and return the new number
 
-function addFive(num) {
-  let total = num + 5
-  return total
-}
+// function addFive(num) {
+//   let total = num + 5
+//   return total
+// }
+
+//refactored
+const addFive = num => num += 5;
