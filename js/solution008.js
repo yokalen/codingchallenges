@@ -13,3 +13,14 @@ Usage Examples:
 cap = 10, on = 5, wait = 5 --> 0 # He can fit all 5 passengers
 cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
  */
+
+//P: num of passengers possible, num of passengers current, num of people waiting to get on the bus
+//R: If there is enough space, return 0, if there isn't return the number of passengers that cannot fit
+//E: 10, 5, 5 => 0
+//   100, 60, 50 => 10
+//   25, 13, 10 => 0
+//   20, 17, 5 => 2
+//P:
+//calculate the space remaining (capacity - current passengers)
+//if space remaining >= passengers waiting, return 0
+//if space remaining < passengers waiting, return (passengers waiting - space remaining)
