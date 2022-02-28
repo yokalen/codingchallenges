@@ -10,3 +10,12 @@
 //double son's age and subtract father's
 //if the answer is a negative number make it positive
 //return answer
+
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    let answer = 2 * sonYearsOld - dadYearsOld
+    if(answer < 0){
+        return -(answer)
+    } else{
+        return answer
+    }
+}
