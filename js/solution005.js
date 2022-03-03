@@ -10,3 +10,6 @@
 //take in three numbers
 //sum numbers
 //return total
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+}
