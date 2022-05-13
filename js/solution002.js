@@ -7,6 +7,8 @@
 //Psuedo code
 //function takes in speed in km/hr
 //calculates and returns speed in cm/s
-function cockroachSpeed(s) {
+/* function cockroachSpeed(s) {
   return Math.floor(s * 27.778)
-}
+} */
+//refactored
+const cockroachSpeed = (s) => Math.floor(s * 27.778)
