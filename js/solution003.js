@@ -6,3 +6,11 @@
 //          false, true => false
 //          false, false => false
 //          true, false => true
+//first solution
+function setAlarm(employed, vacation){
+    if(employed && !vacation){
+        return true
+    }else{
+        return false
+    }
+}
