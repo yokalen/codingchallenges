@@ -7,10 +7,12 @@
 //          false, false => false
 //          true, false => true
 //first solution
-function setAlarm(employed, vacation){
+/* function setAlarm(employed, vacation){
     if(employed && !vacation){
         return true
     }else{
         return false
     }
-}
+} */
+//refactored
+const setAlarm = (employed, vacation) => (employed && !vacation) ? true : false 
