@@ -8,6 +8,8 @@
 //take string 
 //duplicate each character
 //return string with double characters
-function doubleChar(str) {
+/* function doubleChar(str) {
     return str.split('').map( x => (x + x) ).join('')
-}
+} */
+//refactor code
+const doubleChar = str => str.split('').map( x => (x + x) ).join('')
