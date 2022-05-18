@@ -10,6 +10,8 @@
 //take in three numbers
 //sum numbers
 //return total
-function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+/* function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
-}
+} */
+//refactored 
+const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
