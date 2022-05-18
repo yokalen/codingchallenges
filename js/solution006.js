@@ -11,11 +11,15 @@
 //if the answer is a negative number make it positive
 //return answer
 
-function twiceAsOld(dadYearsOld, sonYearsOld) {
+/* function twiceAsOld(dadYearsOld, sonYearsOld) {
     let answer = 2 * sonYearsOld - dadYearsOld
     if(answer < 0){
         return -(answer)
     } else{
         return answer
     }
-}
+} */
+
+//refactored
+
+const twiceAsOld = (dadYearsOld, sonYearsOld) => Math.abs(2 * sonYearsOld - dadYearsOld)
