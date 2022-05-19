@@ -14,3 +14,14 @@ Assume that beast and dish are always lowercase strings, and that each has at le
 //get the first and last letter of the name
 //get the first and last letter of the dish
 //return true if they match or false if they don't
+
+function feast(beast, dish) {
+    let beastLetters = beast.split('').shift() + beast.split('').pop()
+    let dishLetters = dish.split('').shift() + dish.split('').pop()
+    return beastLetters === dishLetters
+}
+
+//test 
+console.log('true', feast("great blue heron", "garlic naan") )
+console.log('true', feast("chickadee", "chocolate cake"))
+console.log('false', feast("brown bear", "bear claw"))
