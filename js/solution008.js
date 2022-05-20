@@ -24,3 +24,12 @@ cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
 //calculate the space remaining (capacity - current passengers)
 //if space remaining >= passengers waiting, return 0
 //if space remaining < passengers waiting, return (passengers waiting - space remaining)
+
+function enough(cap, on, wait) {
+    let space = cap - on
+    if(space >= wait){
+        return 0;
+    }else if(space < wait){
+        return wait - space;
+    }
+}
