@@ -25,11 +25,14 @@ cap = 100, on = 60, wait = 50 --> 10 # He can't fit 10 of the 50 waiting
 //if space remaining >= passengers waiting, return 0
 //if space remaining < passengers waiting, return (passengers waiting - space remaining)
 
-function enough(cap, on, wait) {
-    let space = cap - on
-    if(space >= wait){
-        return 0;
-    }else if(space < wait){
-        return wait - space;
-    }
-}
+// function enough(cap, on, wait) {
+//     let space = cap - on
+//     if(space >= wait){
+//         return 0;
+//     }else if(space < wait){
+//         return wait - space;
+//     }
+// }
+
+//refactored code
+const enough = (cap, on, wait) => cap - on >= wait ? 0 : wait - (cap - on);
