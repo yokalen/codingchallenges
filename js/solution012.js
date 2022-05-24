@@ -7,6 +7,8 @@
 //P: multiply the three integers in list a to find the product
 //   multiply the three integers in list b to find the product
 //   return the absolute value of a - b
-function findDifference(a, b) {
-  return Math.abs(a.reduce((acc, c) => acc * c, 1) - b.reduce((acc, c) => acc * c, 1))
-}
+// function findDifference(a, b) {
+//   return Math.abs(a.reduce((acc, c) => acc * c, 1) - b.reduce((acc, c) => acc * c, 1))
+// }
+//write code on one line
+let findDifference = (a, b) => Math.abs(a.reduce((acc, c) => acc * c, 1) - b.reduce((acc, c) => acc * c, 1))
