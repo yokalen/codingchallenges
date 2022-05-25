@@ -17,6 +17,9 @@
 //double the second parameter and add it to the first
 //return that num
 
-function move (position, roll) {
-  return 2 * roll + position
-}
+// function move (position, roll) {
+//   return 2 * roll + position
+// }
+
+// Refactored to one line
+const move = (position, roll) => 2 * roll + position;
