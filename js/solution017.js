@@ -26,3 +26,20 @@
 //P: number, no less than 1
 //R: array of three nums [human years, cat years, dog years]
 //E: 4 => [4, (15 + 9 + 4 + 4), (15 + 9 + 5 + 5)
+function humanYearsCatYearsDogYears (humanYears){
+    let catYears = 0
+    let dogYears = 0
+    for(let i = 1; i <= humanYears; i++){
+        if(i === 1){
+            catYears += 15;
+            dogYears += 15;
+        }else if(i === 2){
+            catYears += 9;
+            dogYears += 9;
+        }else if(i > 2){
+            catYears += 4;
+            dogYears += 5;
+        }
+    }
+    return [humanYears, catYears, dogYears]
+}
