@@ -22,7 +22,10 @@
 //Take our every 1 and replace with an I
 //Return the corrected string
 
-function correct(string)
-{
-	return string.split('5').join('S').split('0').join('O').split('1').join('I')
-}
+// function correct(string)
+// {
+// 	return string.split('5').join('S').split('0').join('O').split('1').join('I')
+// }
+
+// Refactored solution
+const correct = string => string.split('5').join('S').split('0').join('O').split('1').join('I');
