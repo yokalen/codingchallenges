@@ -7,6 +7,8 @@
 //Psuedo code
 //return true if num is divisible by two
 //otherwise return false
-function testEven(n) {
-    return n % 2 === 0;
-}
+// function testEven(n) {
+//     return n % 2 === 0;
+// }
+//refactor into one line
+const testEven = n => n % 2 === 0
