@@ -6,7 +6,10 @@
 //find num at n index of array
 //if not found return -1 or
 //calculate num to nth power and return
-function index(array, n){
-  let num = array[n]
-    return num ? Math.pow(num, n) : -1
-}
+// function index(array, n){
+//   let num = array[n]
+//     return num ? Math.pow(num, n) : -1
+// }
+
+//refactored
+const index = (array, n) => array[n] ? Math.pow(array[n], n) : -1
