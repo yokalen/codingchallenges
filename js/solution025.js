@@ -6,6 +6,11 @@
 //   10, 20%, 600 => 300
 //P: 
 // return cost of vacation divided by the high price times the discount
-function dutyFree(price, discount, vacation){
-    return Math.floor( vacation / (price * (discount/100) ) );
-}
+
+//first try
+// function dutyFree(price, discount, vacation){
+//     return Math.floor( vacation / (price * (discount/100) ) );
+// }
+
+//refactored
+const dutyFree = (price, discount, vacation) => Math.floor( vacation / (price * (discount/100) ) );
