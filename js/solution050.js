@@ -14,4 +14,5 @@ function multipleOfIndex(array) {
         result.push(array[i])
          }
      }
+     return result;
     }
