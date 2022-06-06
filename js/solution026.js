@@ -7,6 +7,10 @@
 //P: 
 //return true if the frist boolean does not match the second 
 
-function xor(a, b) {
-    return a != b;
-}
+//first try
+// function xor(a, b) {
+//     return a != b;
+// }
+
+//refactored
+const xor = (a, b) => a != b;
