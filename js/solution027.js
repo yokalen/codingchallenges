@@ -7,6 +7,9 @@
 //P: if animal is alligator return small else return wide
 
 //first try
-function mouthSize(animal) {
-  return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
-}
+// function mouthSize(animal) {
+//   return animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
+// }
+
+//refactored
+const mouthSize = animal => animal.toLowerCase() === 'alligator' ? 'small' : 'wide';
