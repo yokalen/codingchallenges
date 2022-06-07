@@ -8,11 +8,11 @@
 // return the correct array
 
 function pipeFix(numbers){
-    let first = numbers[0];
-    let last = numbers[numbers.length - 1]
-    let corrected = []
-    for(let i = first; i <= last; i++){
-        corrected.push(i);
+    let start = numbers[0];
+    let end = numbers[numbers.length - 1]
+    let arr = []
+    for(let i = start; i <= end; i++){
+        arr.push(i);
     }
-    return corrected;
+    return arr;
 }
