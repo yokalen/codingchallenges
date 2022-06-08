@@ -5,6 +5,9 @@
 //   '10' => 16
 //   'FF' => 255
 
-function hexToDec(hexString){
-  return parseInt(hexString, 16);
-}
+// function hexToDec(hexString){
+//   return parseInt(hexString, 16);
+// }
+
+//refactored
+const hexToDec = hexString => parseInt(hexString, 16)
