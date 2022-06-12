@@ -10,6 +10,8 @@
 //psuedo code
 //reverse the array and return
 
-function swapValues(arr) {
-    return arr.reverse();
-}
+// function swapValues(arr) {
+//     return arr.reverse();
+// }
+
+const swapValues = arr => arr.reverse();
