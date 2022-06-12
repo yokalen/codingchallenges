@@ -13,6 +13,8 @@
 //psuedo code
 //if n < 5 return n * 100, if n >= 10 return n * 90, otherwise return n * 95
 
-function saleHotdogs(n){
-  return n < 5 ? n * 100 : n >= 10 ? n * 90 : n * 95;
-}
+// function saleHotdogs(n){
+//   return n < 5 ? n * 100 : n >= 10 ? n * 90 : n * 95;
+// }
+
+const saleHotdogs = n => n < 5 ? n * 100 : n >= 10 ? n * 90 : n * 95;
