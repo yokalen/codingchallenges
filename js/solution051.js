@@ -7,3 +7,6 @@
 //4050, 27 => true
 //4066, 27 => false
 
+function isDivisible(wallLength, pixelSize){
+    return wallLength % pixelSize === 0;
+}
