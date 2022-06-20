@@ -21,4 +21,7 @@
 // }
 
 //refactored
-const twoDecimalPlaces = n => Number(n.toFixed(2));
+// const twoDecimalPlaces = n => Number(n.toFixed(2));
+
+//refactored other way of doing it
+const twoDecimalPlaces = n => Math.round(n*100)/100;
