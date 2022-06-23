@@ -9,4 +9,8 @@
 //3.3424 => 3.34
 
 //p
-//
+//return number rounded to two decimal places
+
+function twoDecimalPlaces(n) {
+    return Number(n.toFixed(2));
+  }
