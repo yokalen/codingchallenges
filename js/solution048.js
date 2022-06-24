@@ -1,0 +1,12 @@
+//p
+//number n with more than two decimal places
+
+//r
+//number n rounded to two decimal places
+
+//e
+//5.5589 => 5.56
+//3.3424 => 3.34
+
+//p
+//
