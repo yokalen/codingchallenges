@@ -11,6 +11,10 @@
 //join elements in array with , as seperator
 
 
-function printArray(array){
-    return array.join(',')
-  }
+// function printArray(array){
+//     return array.join(',')
+//   }
+
+//Refactored
+
+const printArray = array => array.join(',');
