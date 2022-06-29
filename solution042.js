@@ -12,6 +12,9 @@
 //join the name array with spaces
 //return the string
 
-function sayHello(name, city, state){
-    return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
-}
+// function sayHello(name, city, state){
+//     return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
+// }
+
+//consolidated
+const sayHello = (name, city, state) => `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`
