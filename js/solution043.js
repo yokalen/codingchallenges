@@ -12,6 +12,7 @@
 //if the number is negative
 //else the number is positive
 
+<<<<<<< HEAD
 function  calculateAge(birthYear, requestYear) {
     let difference = requestYear - birthYear;
     if(difference == -1){
@@ -26,3 +27,5 @@ function  calculateAge(birthYear, requestYear) {
         return "You are " + difference + " years old."
     }
 }
+=======
+>>>>>>> 14b267b0e87628007d2ce0590d5ceaacf0fb547e
