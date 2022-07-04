@@ -12,20 +12,20 @@
 //if the number is negative
 //else the number is positive
 
-<<<<<<< HEAD
-function  calculateAge(birthYear, requestYear) {
-    let difference = requestYear - birthYear;
-    if(difference == -1){
-        return "You will be born in 1 year."
-    }else if(difference == 1){
-        return "You are 1 year old."
-    }else if(difference < 0){
-        return "You will be born in " + -(difference) + " years."
-    }else if(difference == 0){
-        return "You were born this very year!"
-    }else{
-        return "You are " + difference + " years old."
-    }
-}
-=======
->>>>>>> 14b267b0e87628007d2ce0590d5ceaacf0fb547e
+// function  calculateAge(birthYear, requestYear) {
+//     let difference = requestYear - birthYear;
+//     if(difference == -1){
+//         return "You will be born in 1 year."
+//     }else if(difference == 1){
+//         return "You are 1 year old."
+//     }else if(difference < 0){
+//         return "You will be born in " + -(difference) + " years."
+//     }else if(difference == 0){
+//         return "You were born this very year!"
+//     }else{
+//         return "You are " + difference + " years old."
+//     }
+// }
+
+//consolidated
+const calculateAge = (birthYear, requestYear) => (requestYear - birthYear) == -1 ? "You will be born in 1 year." : (requestYear - birthYear) == 1 ? "You are 1 year old." : (requestYear - birthYear) < 0 ? "You will be born in " + (birthYear - requestYear) + " years." : birthYear === requestYear ? "You were born this very year!" : "You are " + (requestYear - birthYear) + " years old.";
