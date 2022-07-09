@@ -3,7 +3,10 @@
 //r
 //eatimate of how many stairs will be climbed in 20 years
 
-function stairsIn20(s){
-    return s.reduce((acc, c) => acc + c.reduce((acc, n) => acc + n, 0), 0) * 20;
-  }
+// function stairsIn20(s){
+//     return s.reduce((acc, c) => acc + c.reduce((acc, n) => acc + n, 0), 0) * 20;
+//   }
 
+//refactored
+
+const stairsIn20 = s => s.reduce((acc, c) => acc + c.reduce((acc, n) => acc + n, 0), 0) * 20;
