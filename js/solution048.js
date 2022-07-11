@@ -1,16 +1,14 @@
-//p
+//params
 //number n with more than two decimal places
 
-//r
+//return
 //number n rounded to two decimal places
 
-//e
+//example
 //5.5589 => 5.56
 //3.3424 => 3.34
 
-//p
-//return number rounded to two decimal places
-
+//first try
 // function twoDecimalPlaces(n) {
 //     return Number(n.toFixed(2));
 //   }
@@ -20,8 +18,8 @@
 //     return Math.round(n*100)/100;
 // }
 
-//refactored
+//refactored first solution
 // const twoDecimalPlaces = n => Number(n.toFixed(2));
 
-//refactored other way of doing it
+//refactored second way of doing it
 const twoDecimalPlaces = n => Math.round(n*100)/100;
