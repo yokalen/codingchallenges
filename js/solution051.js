@@ -7,6 +7,8 @@
 //4050, 27 => true
 //4066, 27 => false
 
-function isDivisible(wallLength, pixelSize){
-    return wallLength % pixelSize === 0;
-}
+// function isDivisible(wallLength, pixelSize){
+//     return wallLength % pixelSize === 0;
+// }
+
+const isDivisible = (wallLength, pixelSize) => wallLength % pixelSize === 0;
