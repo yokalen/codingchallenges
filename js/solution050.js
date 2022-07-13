@@ -7,12 +7,14 @@
 //[68,-1,1,-7,10,10] => [-1,10]
 //[11, -11] => [-11]
 
-function multipleOfIndex(array) {
-    let result = [];
-    for(let i = 0; i < array.length; i++){
-      if(array[i] % i === 0){
-        result.push(array[i])
-         }
-     }
-     return result;
-    }
+// function multipleOfIndex(array) {
+//     let result = [];
+//     for(let i = 0; i < array.length; i++){
+//         if(array[i] % i === 0){
+//             result.push(array[i])
+//         }
+//     }
+//     return result;
+// }
+
+const multipleOfIndex = array => array.filter((el, i) => el % i === 0);
