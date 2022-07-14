@@ -8,6 +8,8 @@
 //"3-4" => false
 //"zero" => false
 
-function isDigit(s) {
- return parseFloat(s) == (s);
-}
+// function isDigit(s) {
+//  return parseFloat(s) == (s);
+// }
+
+const isDigit = s => parseFloat(s) == (s);
