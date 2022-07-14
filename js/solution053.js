@@ -9,9 +9,5 @@
 //"zero" => false
 
 function isDigit(s) {
-    if(Number(s)){
-      return true
-    }else{
-      return false
-    }
-  }
+ return parseFloat(s) == (s);
+}
