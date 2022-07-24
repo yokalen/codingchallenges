@@ -15,3 +15,10 @@
 //psuedo code
 //calculate the total number based on if bonus is true or false
 //return a string with the prefix followed by the number
+
+function bonusTime(salary, bonus) {
+    if(bonus){
+        salary *= 10;
+    }
+    return '\u00A3' + ' ' + salary;
+}
