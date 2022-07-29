@@ -13,7 +13,10 @@
 //if size % 2 = 0, return '10' size/2 number of times
 //if size % 2 != 0, return '10' size/2 number of times + 1
 
-function stringy(size) {
-    let str = '10'
-    return str.repeat(size).slice(0,size);
-}
+// function stringy(size) {
+//     let str = '10'
+//     return str.repeat(size).slice(0,size);
+// }
+
+//simplify
+const stringy = size => '10'.repeat(size).slice(0,size);
