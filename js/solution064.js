@@ -1,7 +1,7 @@
 String.prototype.toJadenCase = function (param) {
     //...
     let words = param.split(' ')
-    words.forEach(el => {
+    words = words.forEach(el => {
         return el[0].toUppercase
     });
     return words.join(' ')
