@@ -11,4 +11,5 @@ function arrAdder(arr) {
         c += arr[i][2]
         d += arr[i][3] 
     }
+    return a + ' ' + b +  ' ' + c + ' ' + d
 }
