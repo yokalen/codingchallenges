@@ -12,16 +12,18 @@
 
 //pseudo code
 // return a string of all the 0 index letters, plus a string of all the 1st index letters, and so on for each index string for all arrays
-function arrAdder(arr) {
-    let a = ''
-    let b = ''
-    let c = ''
-    let d = ''
-    for(let i = 0; i < arr.length; i++){
-        a += arr[i][0]
-        b += arr[i][1]
-        c += arr[i][2]
-        d += arr[i][3] 
-    }
-    return a + ' ' + b +  ' ' + c + ' ' + d
-}
+
+//first try
+// function arrAdder(arr) {
+//     let a = ''
+//     let b = ''
+//     let c = ''
+//     let d = ''
+//     for(let i = 0; i < arr.length; i++){
+//         a += arr[i][0]
+//         b += arr[i][1]
+//         c += arr[i][2]
+//         d += arr[i][3] 
+//     }
+//     return a + ' ' + b +  ' ' + c + ' ' + d
+// }
