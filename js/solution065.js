@@ -26,4 +26,13 @@
 //         d += arr[i][3] 
 //     }
 //     return a + ' ' + b +  ' ' + c + ' ' + d
-// }
+// 
+
+//second try
+// function arrAdder(arr) {
+//     let result = '[]'
+//     for(let i = 0; i < arr.length; i++){
+//       for(let j = 0; j < arr.length; j++){
+//         result += arr[i][j] + ' '
+//       }
+//       return result
