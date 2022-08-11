@@ -13,3 +13,6 @@
 //psuedo code
 //if n % 
 
+function nearestSq(n){
+    return Math.pow(Math.round(Math.sqrt(n)));
+}
