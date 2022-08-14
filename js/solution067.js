@@ -23,4 +23,3 @@ function solve(arr){
     }
     return answer.filter(x => x);
 };
-
