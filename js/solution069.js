@@ -13,17 +13,21 @@
 //add 0s to the beginning of the second array and end of the first array according to the shifting value
 //add the space for each array
 
-function addingShifted (arrayOfArrays, shift) {
-  let arrA = arrayOfArrays[0][0];
-  let arrB = arrayOfArrays[0][1];
-  let solution = []
+//first try
+let arrayOfArrays = [[1,2,3,4,5,6], [7,7,7,7,7,-7]]
+let arrA = arrayOfArrays[0];
+let arrB = arrayOfArrays[1];
+let solution = []
+let shift = 0
+function addingShifted(arrayOfArrays, shift){
   for(i = 1; i <= shift; i++){
     arrA = arrA.push(0);
     arrB = arrB.unshift(0);
   }
-  for (let i = 0; i < arrayOfArrays[0].length - 1; i++){
-    solution.push(arrA[i] + arrB[i])
+  for (let j = 0; j < arrayOfArrays[0].length - 1; j++){
+   solution = solution.push(arrA[j] + arrB[j])
   }
+  return solution
 }
 
 
