@@ -10,6 +10,20 @@
 
 //psuedo code
 //declare a new array that will be the result
-//add 0s to the beginning of the second array according to the shifting value
-//concat?
+//add 0s to the beginning of the second array and end of the first array according to the shifting value
+//add the space for each array
+
+function addingShifted (arrayOfArrays, shift) {
+  let arrA = arrayOfArrays[0][0];
+  let arrB = arrayOfArrays[0][1];
+  let solution = []
+  for(i = 1; i <= shift; i++){
+    arrA = arrA.push(0);
+    arrB = arrB.unshift(0);
+  }
+  for (let i = 0; i < arrayOfArrays[0].length - 1; i++){
+    solution.push(arrA[i] + arrB[i])
+  }
+}
+
 
