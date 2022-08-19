@@ -30,4 +30,4 @@ function addingShifted(arrayOfArrays, shift){
   return solution
 }
 
-
+//second try
