@@ -12,9 +12,7 @@
 //divide by length of the array
 //round down
 
-//first try
+//second try
 function getAverage(marks){
-    let sum = marks.reduce((acc,c)=>(acc+c,0))
-    let avg = sum / marks.length
-    return Math.floor(avg);
+    return Math.floor((marks.reduce((acc,c)=>(acc+c,0))) / marks.length)
   }
