@@ -12,7 +12,6 @@
 //divide by length of the array
 //round down
 
-//second try
 function getAverage(marks){
-    return Math.floor((marks.reduce((acc,c)=>(acc+c,0))) / marks.length)
+    return Math.floor((marks.reduce((acc, c) => acc + c, 0)) / marks.length)
   }
