@@ -14,3 +14,9 @@ function disemvowel(str) {
     let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
     return str.split('').filter(el => !vowels.includes(el)).join('');
 }
+
+//simplify
+function disemvowel(str) {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    return str.split('').filter(el => !vowels.includes(el.toLowerCase())).join('');
+}
