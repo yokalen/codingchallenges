@@ -11,5 +11,5 @@
 //check to see if each number in the array is divisible by the divisor, and if so push it to a new array that is returned
 
 function divisibleBy(numbers, divisor){
-    return numbers.filter(x => x % divisor)
+    return numbers.filter(x => x % divisor == 0)
 }
