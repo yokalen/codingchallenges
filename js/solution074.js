@@ -12,13 +12,17 @@
 // const duckDuckGoose = (players, goose) => players.length <= goose ? players[(goose - 1)][name] : players[(players.length % goose - 1)];
 
 //second
-function duckDuckGoose(players, goose) {
-    let chosen 
-    if(players.length >= goose){
-      chosen = players.length - 1
-    }else{
-      chosen = (goose % players.length) - 1
-    }
-    return players[chosen].name
-  }
+// function duckDuckGoose(players, goose) {
+//     let chosen 
+//     if(players.length >= goose){
+//       chosen = players.length - 1
+//     }else{
+//       chosen = (goose % players.length) - 1
+//     }
+//     return players[chosen].name
+//   }
 
+//final
+function duckDuckGoose(players, goose){
+    return players[(goose-1)%players.length].name
+}
