@@ -15,7 +15,7 @@ function whoLikesIt(arr){
     if(!arr || arr.length === 0){
         return 'no one likes this'
     }if(arr.length === 1){
-        return arr[0].concat('likes this')
+        return arr[0].concat(' likes this')
     }if(arr.length === 2){
         return arr[0].concat(' and ', arr[1], ' like this')
     }if(arr.length === 3){
