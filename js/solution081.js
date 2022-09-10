@@ -21,7 +21,7 @@ function whoLikesIt(arr){
     }if(arr.length === 3){
         return arr[0].concat(', ', arr[1], ' and ', arr[2], ' like this')
     }if(arr.length > 3){
-        let num = arr.length - 1
+        let num = arr.length - 2
         return arr[0].concat(', ', arr[1], ' and ', num, ' others like this')
     }
 }
