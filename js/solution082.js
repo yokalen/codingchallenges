@@ -18,12 +18,19 @@ return the equivalent of the sentence when capitalised. E.g
 //   }
 
 //forEach
-function capSentence(text){
-    //create an array of words
-    let words = text.toLowerCase().split(' ')
-    let capWords = []
+// function capSentence(text){
+//     //create an array of words
+//     let words = text.toLowerCase().split(' ')
+//     let capWords = []
 
-    //capitalize the first letter of each word
-    words.forEach(word => capWords.push(word[0].toUpperCase() + word.slice(1)))
-    return capWords.join(' ')
-}
+//     //capitalize the first letter of each word
+//     words.forEach(word => capWords.push(word[0].toUpperCase() + word.slice(1)))
+//     return capWords.join(' ')
+// }
+
+//map and slice
+
+
+
+
+
