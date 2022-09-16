@@ -28,17 +28,22 @@ return the equivalent of the sentence when capitalised. E.g
 //     return capWords.join(' ')
 // }
 
-//map and slice
+// //map and slice
+// function capSentence(text){
+//     //create an array of words
+//     let words = text.toLowerCase().split(' ')
+//     //capitalize the first letter of each word
+//     let capWords = words.map(word => {
+//         return word[0].toUpperCase() + word.slice(1)
+//     })
+//     return capWords.join(' ')
+// }
+
+//map and replace
 function capSentence(text){
-    //create an array of words
     let words = text.toLowerCase().split(' ')
-    //capitalize the first letter of each word
     let capWords = words.map(word => {
-        return word[0].toUpperCase() + word.slice(1)
+        return word.replace(word[0], word[0].toUpperCase())
     })
     return capWords.join(' ')
 }
-
-
-
-
