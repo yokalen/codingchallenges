@@ -7,13 +7,15 @@ E.g hammingDistance('rover', 'river') // should return 1
 
 
 function hammingDistance(stringA, stringB) {
+    let result = 0
     if(stringA.length === stringB.length){
-        let hammingDistance = 0
         for(let i = 0; i < stringA.length; i++){
-            if(stringA[i] != stringB[i]){
-                hammingDistance++
+            if(stringA++[++i].toLowerCase() != stringB++[++i].toLowerCase()){
+                result++
             }
         }
-        return hammingDistance
+        return result
+    }else{
+        throw new Error('Strings do not have equal length')
     }
 }
