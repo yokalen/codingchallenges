@@ -6,11 +6,17 @@
 //psuedo code
 //send the numbers to an array and sort the array high to low, then send the first and last to a new array, make that back into a string with a space seperator
 
+//first try
+// function highAndLow(numbers){
+//     if(!numbers.includes(' ')){
+//         numbers = numbers + ' ' + numbers;
+//     }
+//     let arr = numbers.split(' ').sort((a,b) => b - a)
+//     let newArr = arr.shift() + ' ' + arr.pop()
+//     return newArr.toString()
+// }
+
 function highAndLow(numbers){
-    if(!numbers.includes(' ')){
-        numbers = numbers + ' ' + numbers;
-    }
-    let arr = numbers.split(' ').sort((a,b) => b - a)
-    let newArr = arr.shift() + ' ' + arr.pop()
-    return newArr.toString()
+    numbers = numbers.split(' ');
+    return `${Math.max(...numbers)} ${Math.min(...numbers)}`
 }
