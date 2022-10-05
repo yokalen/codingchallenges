@@ -15,6 +15,5 @@ function repeats(arr){
             newArr.push(arr[i])
         }
     }
-    return newArr.reduce((acc, c) => acc + c, 0);
-   
+    return newArr.reduce((acc, c) => acc + c, 0);  
 }
