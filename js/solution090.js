@@ -9,3 +9,7 @@ function descendingOrder(num){
     //sort arr in descending order
     //join and return
   }
+
+console.log(descendingOrder(42145))
+console.log(descendingOrder(145263))
+console.log(descendingOrder(123456789))
