@@ -6,7 +6,9 @@
 
 function descendingOrder(num){
     //split num into array of nums
+    return Number(num.toString().split('')
     //sort arr in descending order
+    .sort((a, b) => b - a)
     //join and return
   }
 
