@@ -10,6 +10,7 @@ function descendingOrder(num){
     //sort arr in descending order
     .sort((a, b) => b - a)
     //join and return
+    .join(''))
   }
 
 console.log(descendingOrder(42145))
