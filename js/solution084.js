@@ -11,7 +11,7 @@ function duplicateEncoder(string){
     let str = string.toLowerCase()
     let result = ''
     for(let i = 0; i < string.length; i++){
-        if(str.indexOf(i) != str.lastIndexOf(i)){
+        if(str.indexOf(str[i]) != str.lastIndexOf(str[i])){
             result += ')'
         }else{
             result += '('
