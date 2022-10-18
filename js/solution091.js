@@ -3,3 +3,7 @@
 //hello => hll
 //goodbye => gdby
 //HELLO => HELLO
+
+function shortcut(string){
+
+}
