@@ -7,3 +7,7 @@
 function shortcut(string){
 
 }
+
+console.log(shortcut('hello'), 'hll')
+console.log(shortcut('goodbye'), 'gdby')
+console.log(shortcut('HELLO'), 'HELLO')
