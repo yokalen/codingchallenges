@@ -5,7 +5,11 @@
 //HELLO => HELLO
 
 function shortcut(string){
-
+    return string.replaceAll('a', '')
+    .replaceAll('e', '')
+    .replaceAll('i', '')
+    .replaceAll('o', '')
+    .replaceAll('u', '')
 }
 
 console.log(shortcut('hello'), 'hll')
