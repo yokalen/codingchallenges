@@ -5,3 +5,20 @@
 // "recede"   =>  "()()()"
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
+
+function duplicateEncode(word){
+    let result = ''
+    for(let i = 0; i < word.length; i++){
+        if(word.indexOf(word[i]) === word.lastIndexOf(word[i])){
+            result += '('
+        }else{
+            result += ')'
+        }
+    }
+    return result
+}
+
+console.log(duplicateEncode("din"), "(((")
+console.log(duplicateEncode("recede"), "()()()")
+console.log(duplicateEncode("Success"), ")())())")
+console.log(duplicateEncode("(( @"), "))((")
