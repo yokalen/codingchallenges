@@ -39,6 +39,11 @@ function pigLatin(str){
     }
 }
 
+//declarative - 88% slower
+// function pigLatin(str){
+//     return str.replace(/^([aeiouy])(._)/, '$1$2way').replace(/^(_[_^aeiouy]+)(._)/, '$2$1ay')
+// }
+
 console.log(pigLatin('pig'), 'igpay')
 console.log(pigLatin('glove'), 'oveglay')
 console.log(pigLatin('explain'), 'explainway')
