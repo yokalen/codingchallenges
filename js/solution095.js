@@ -8,8 +8,9 @@
 
 function duplicateEncode(word){
     let result = ''
+    let str = word.toLowerCase()
     for(let i = 0; i < word.length; i++){
-        if(word.indexOf(word[i]) === word.lastIndexOf(word[i])){
+        if(str.indexOf(str[i]) === str.lastIndexOf(str[i])){
             result += '('
         }else{
             result += ')'
