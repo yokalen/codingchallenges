@@ -22,8 +22,14 @@
 //     return str.split(' ').reverse().join(' ').split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('');
 // }
 
-//one line
-const transformStr = str => str.split(' ').reverse().join(' ').split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('');
+//simplified
+const transformStr = str => str
+    .split(' ')
+    .reverse()
+    .join(' ')
+    .split('')
+    .map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase())
+    .join('');
 
 console.log(transformStr("Example Input"), "iNPUT eXAMPLE")
 console.log(transformStr("HAPPY DAY OF THE DEAD"), "dead the of day happy")
