@@ -19,9 +19,7 @@
 function transformStr(str){
     //split => reverse => join
     //reverse the casing map
-    let newStr = str.split(' ').reverse().join(' ')
-    let revLs = newStr.split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('')
-    return revLs;
+    return str.split(' ').reverse().join(' ').split('').map(letter => letter === letter.toUpperCase() ? letter.toLowerCase() : letter.toUpperCase()).join('');
 }
 
 console.log(transformStr("Example Input"), "iNPUT eXAMPLE")
