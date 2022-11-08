@@ -4,7 +4,7 @@
 //a1 = ["tarp", "mice", "bull"], a2 = ["lively", "alive", "harp", "sharp", "armstrong"] => []
 
 function inArray(a1,a2){
-    let str = a2.join('')
+    let str = a2.join(' ')
     return a1.filter(s => str.indexOf(s) !== -1).sort()
   }
 
