@@ -20,8 +20,13 @@
 //     }
 
 //filter
+// function findDeletedNumber(arr, mixArr){
+//     return arr.filter(num => mixArr.indexOf(num) === -1)[0] || 0;
+// }
+
+//math
 function findDeletedNumber(arr, mixArr){
-    return arr.filter(num => mixArr.indexOf(num) === -1)[0] || 0;
+    return arr.reduce((acc, c) => acc + c, 0) - mixArr.reduce((acc, c) => acc + c, 0)
 }
 
 console.log(findDeletedNumber([1,2,3,4,5], [3,4,1,5]), 2)
