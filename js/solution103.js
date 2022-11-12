@@ -21,7 +21,7 @@
 function gimme(arr){
     //sort the arr as a new arr, find the middle num
     //get the index of the middle num from the original arr
-    let sorted = arr.sort()
+    let sorted = arr.slice().sort((a, b) => a - b)
     let midNum = sorted[1]
     return arr.indexOf(midNum)
 }
