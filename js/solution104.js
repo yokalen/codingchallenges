@@ -15,8 +15,12 @@
 // [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]  =>  [1, 8, 3, 6, 5, 4, 7, 2, 9, 0]
 
 function sortArray(arr){
-
+    //copy, filter odd, sort ascending
+    let oddSort = arr.slice().filter(el => el % 2 != 0).sort()
+    //map => even stays, odd gets replaced
+    return arr.map(el => el % 2 === 0 ? el : el = oddSort.shift())
 }
+
 
 console.log(sortArray([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4])
 console.log(sortArray([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0])
