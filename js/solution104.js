@@ -16,7 +16,7 @@
 
 function sortArray(arr){
     //copy, filter odd, sort ascending
-    let oddSort = arr.slice().filter(el => el % 2 != 0).sort()
+    let oddSort = arr.slice().filter(el => el % 2 != 0).sort((a, b) => a - b)
     //map => even stays, odd gets replaced
     return arr.map(el => el % 2 === 0 ? el : el = oddSort.shift())
 }
