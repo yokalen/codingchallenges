@@ -10,10 +10,15 @@
 
 function chunkArray(array, size) {
     let result = []
-    for(let i = size; i < array.length; i + size){
-        result += array.slice((i - size), i - 1) 
+    for(value of array){
+        let lastArray = result[result.length - 1]
+        if(!lastArray || lastArray.length === size){
+            result.push([value])
+        }else{
+            lastArray.push(value)
+        }
     }
-    return result.concat(slice(array.length - (array.length % size))) 
+    return result
 }
 
 console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 5), [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13]])
