@@ -23,11 +23,21 @@
 // }
 
 //splice
+// function chunkArray(array, size){
+//     let result = []
+//     let arrayCopy = [...array]
+//     while(arrayCopy.length > 0){
+//         result.push(arrayCopy.splice(0, size))
+//     }
+//     return result
+// }
+
+//slice
 function chunkArray(array, size){
     let result = []
-    let arrayCopy = [...array]
-    while(arrayCopy.length > 0){
-        result.push(arrayCopy.splice(0, size))
+    for(let i = 0; i < array.length; i += size){
+        let chunk = array.slice(i, i + size)
+        result.push(chunk)
     }
     return result
 }
