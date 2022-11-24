@@ -33,23 +33,23 @@
 // }
 
 //slice
-// function chunkArray(array, size){
-//     let result = []
-//     for(let i = 0; i < array.length; i += size){
-//         let chunk = array.slice(i, i + size)
-//         result.push(chunk)
-//     }
-//     return result
-// }
+function chunkArray(array, size){
+    let result = []
+    for(let i = 0; i < array.length; i += size){
+        let chunk = array.slice(i, i + size)
+        result.push(chunk)
+    }
+    return result
+}
 
 //recursion
-function chunkArray(array, size){
-    if(array.length <= size){
-        return [array]
-    }
+// function chunkArray(array, size){
+//     if(array.length <= size){
+//         return [array]
+//     }
 
-    return [array.slice(0, size), ...chunkArray(array.slice(size), size)]
-}
+//     return [array.slice(0, size), ...chunkArray(array.slice(size), size)]
+// }
 
 console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], 5), [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [11, 12, 13]])
 console.log(chunkArray([1, 2, 3], 1), [[1], [2], [3]])
