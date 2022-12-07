@@ -8,3 +8,15 @@
 
 //Note: For 4 or more names, the number in "and 2 others" simply increases.
 
+//array of names, possibly empty
+//string of display text
+
+function displayText(arr){
+
+}
+
+console.log(displayText([]), "no one likes this")
+console.log(displayText(["Peter"]), "Peter likes this")
+console.log(displayText(["Jacob", "Alex"]), "Jacob and Alex like this")
+console.log(displayText(["Max", "John", "Mark"]), "Max, John and Mark like this")
+console.log(displayText(["Alex", "Jacob", "Mark", "Max"]), "Alex, Jacob and 2 others like this")
