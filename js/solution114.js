@@ -13,12 +13,12 @@
 
 function displayText(arr){
     if(arr.length > 3){
-        return arr[0], ", ", arr[1], " and ", arr.length - 2, "others like this"
-    // }else if(arr.length === 3){
-    //     return arr[0], ""
-    // }
+        return `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`
+    }else if(arr.length === 3){
+        return `${arr[0]}, ${arr[1]} and Mark like this`
+    }
 }
-}
+
 
 console.log(displayText([]), "no one likes this")
 console.log(displayText(["Peter"]), "Peter likes this")
