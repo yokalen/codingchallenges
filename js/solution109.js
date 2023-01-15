@@ -9,19 +9,30 @@
 //ghost = new Ghost();
 //ghost.color => "white" or "yellow" or "purple" or "red"
 
-
 class Ghost{
     constructor(){
-        this.color = this.randomColor()
+        this.color = this.randomColor();
     }
     randomColor(){
-        let colors = ['white', 'yellow', 'purple', 'red']
-        return colors[Math.floor(Math.random() * 4)]
+        const color = ["white", "yellow", "purple", "red"];
+        return color[Math.floor(Math.random() * 4)];
     }
 }
 
-ghost = new Ghost();
-console.log(ghost.color)
+const ghost = new Ghost();
+console.log(ghost.color);
 
 
-//const Ghost = () => this.color = ['white', 'yellow', 'purple', 'red'][Math.floor(Math.random() * 4)];
+
+
+
+
+
+
+
+
+
+
+
+
+
