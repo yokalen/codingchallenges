@@ -6,3 +6,4 @@ function joinElements(arr){
     return arr.join(',')
 }
 
+console.log(joinElements(["h", "o", "l", "a"]), "h,o,l,a")
