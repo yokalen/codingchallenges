@@ -16,6 +16,12 @@ function displayText(arr){
         return `${arr[0]}, ${arr[1]} and ${arr.length - 2} others like this`
     }else if(arr.length === 3){
         return `${arr[0]}, ${arr[1]} and Mark like this`
+    }else if(arr.length === 2){
+        return `${arr[0]} and ${arr[1]} like this`
+    }else if(arr.length === 1){
+        return `${arr[0]} likes this`
+    }else{
+        return `no one likes this`
     }
 }
 
