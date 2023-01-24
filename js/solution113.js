@@ -6,8 +6,8 @@
 //7 => 3
 //12 => 4
 
-const quarter = num => Math.ceil(num/3)
+const quarter = num => Math.ceil(num/3);
 
-console.log(quarter(1), 1)
-console.log(quarter(7), 3)
-console.log(quarter(12), 4)
+console.log(quarter(1), 1);
+console.log(quarter(7), 3);
+console.log(quarter(12), 4);
