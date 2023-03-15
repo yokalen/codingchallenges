@@ -11,8 +11,11 @@
 // https://www.cnet.com => cnet
 
 function domainName(url){
-    //drop http:// or https://
-    let result = url.split('//').slice(1).join('')
+    let result = url
+    //drop http:// or https:// if present
+    if(url[0] === 'h'){
+        result = url.split('//').slice(1).join('');
+      } 
     //split on . and return first element that is not www
     return result = result.split('.').filter(el => el !== 'www')[0]
 }
