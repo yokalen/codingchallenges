@@ -6,7 +6,9 @@
 //[[1,2,3],[3,4,6,6,7],[8,9,10,12,5,6]] => 72
 
 function solve(arr){
-  
+    //remove duplicates
+    //multiply length of each sub array
+    //return number
 }
 
 console.log(solve([[1,2],[4],[5,6]]),4)
