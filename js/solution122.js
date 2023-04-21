@@ -7,3 +7,7 @@
 function nthSmallestNum(arr, n){
   
 }
+
+console.log(nthSmallestNum([3,1,2], 2), 2);
+console.log(nthSmallestNum([15, 20, 7, 10, 4, 3], 3), 7);
+console.log(nthSmallestNum([177, 225, 243, -169, -12, -5, 2, 92], 5), 92);
