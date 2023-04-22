@@ -5,8 +5,11 @@
 //[177, 225, 243, -169, -12, -5, 2, 92], 5 => 92
 
 function nthSmallestNum(arr, n){
-  
-}
+    //sort the array in descending order
+    let arrSort = arr.sort((a, b) => b - a).slice(-n)
+    //return sorted array [-n]
+    return arrSort[0]
+  }
 
 console.log(nthSmallestNum([3,1,2], 2), 2);
 console.log(nthSmallestNum([15, 20, 7, 10, 4, 3], 3), 7);
