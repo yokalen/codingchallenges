@@ -7,8 +7,14 @@
 
 function solve(arr){
     //remove duplicates
-    //multiply length of each sub array
+    let result = 1;
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = [...new Set(arr[i])]
+        //multiply length of each sub array
+        result *= arr[i].length
+    }
     //return number
+    return result;
 }
 
 console.log(solve([[1,2],[4],[5,6]]),4)
