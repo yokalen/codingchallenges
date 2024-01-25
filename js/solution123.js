@@ -5,6 +5,13 @@
 // join the array back into a string
 
 function solution(string) {
-    
-    return;
+    let solution = string
+                    .split("")
+                    .map(el => el !== el.toLowerCase() ? el = " " + el : el)
+                    .join("")
+    return solution;
   }
+
+  console.log(solution("camelCasing"), "camel Casing")
+  console.log(solution("identifier"), "identifier")
+  console.log(solution(""), "")
