@@ -88,7 +88,7 @@ function times(val2) {
 }
 function dividedBy(val2) {
     return function(val1){
-        return val1 / val2;
+        return Math.floor(val1 / val2);
     }
 }
 
